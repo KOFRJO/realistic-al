@@ -42,7 +42,7 @@ To run experiments you need to set the following environment variables
 
 ```bash
 export EXPERIMENT_ROOT=/absolute/path/to/your/experiments
-export DATASET_ROOT=/absolute/path/to/datasets
+export DATA_ROOT=/absolute/path/to/datasets
 ```
 
 Alternatively, you may write them to a file and source that before running experiments, e.g.
