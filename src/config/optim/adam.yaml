@@ -1,0 +1,7 @@
+optimizer:
+  name: adam
+  momentum: 0.9
+
+lr_scheduler:
+  name: steplr
+

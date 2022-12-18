@@ -1,0 +1,8 @@
+optimizer:
+  name: sgd
+  momentum: 0.9
+  nesterov: True
+
+lr_scheduler:
+  name: cosine_decay
+  warmup_epochs: 0

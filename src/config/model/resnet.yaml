@@ -1,0 +1,12 @@
+name: bayesian_resnet 
+base_model: resnet18 
+weight_decay: 0.005
+learning_rate: 0.1
+dropout_p: 0
+load_pretrained: Null
+freeze_encoder: False
+use_ema: False
+exclude_bn_bias: True
+k: 50
+finetune: False
+small_head: True

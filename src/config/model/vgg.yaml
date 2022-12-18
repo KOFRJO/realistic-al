@@ -1,0 +1,12 @@
+name: bayesian_vgg 
+weight_decay: 0.0005
+learning_rate: 0.01
+small_head: False
+dropout_p: 0.5
+load_pretrained: Null
+freeze_encoder: False
+use_ema: False
+exclude_bn_bias: True
+k: 50
+finetune: False
+small_head: False

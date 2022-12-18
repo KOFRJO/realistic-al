@@ -1,0 +1,20 @@
+defaults:
+  - trainer: base
+  - _self_
+  - data: mnist
+  - optim: adam
+  - model: bayesian_mnist
+  - active: standard
+  - query: bald
+
+trainer:
+  batch_size: 64
+  num_workers: 16
+  persistent_workers: True
+  max_epochs: 200
+  min_epochs: 50
+  experiment_name: test
+
+hydra:
+  run:
+    dir: ${trainer.experiments_root}/${trainer.experiment_name}/${trainer.experiment_id}
