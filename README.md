@@ -9,7 +9,19 @@ It is not yet a user-friendly tool which allows obtaining all of our results.
 
 ### Project Structure
 ```
-TODO: Add project Structure
+├── src: Main Structure of project
+│   ├── data: Datasets, Augmentations & DataModules (Pytorch-Lightning)
+│   ├── models: Models with training and evaluation
+│   │   ├── callbacks: Callbacks (Pytorch-Lightning)
+│   │   ├── networks: Network Architectures
+│   ├── plotlib: plotting scripts
+│   ├── query: query functions
+│   │   ├── batchbald_redux: BatchBald
+│   └── utils: helper functions
+├── skripts: Self-SL training (based on Pytorch-Lightning Bolts)
+    └── config
+        ├── data
+        └── model
 ```
 
 ## State of the project
@@ -18,8 +30,9 @@ Singular trainings can be executed after the installation, but in this prelimina
 
 
 ## Installation
-1. Create new python environment (v.3.9)
-2. ```bash pip install -r requirements.txt```
+1. Create new python environment (v.3.8.13)
+2. Install PyTorch
+3. ```bash pip install -r requirements.txt```
 
 If you have issues with CUDA, install a recent PyTorch version according to their website.
 
